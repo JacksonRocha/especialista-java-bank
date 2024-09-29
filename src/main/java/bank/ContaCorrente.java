@@ -23,6 +23,16 @@ public class ContaCorrente implements Conta {
     @Override
     public void transferir(Conta conta, double valor) {
         this.saldo -= valor;
+        sacarTarifa(15);
         conta.depositar(valor);
+    }
+
+    @Override
+    public void aplicarEmInvestimento(double valor) {
+        this.saldo -= valor;
+    }
+
+    public void sacarTarifa(double valorTarifa) {
+        this.saldo -= valorTarifa;
     }
 }
