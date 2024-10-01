@@ -17,6 +17,6 @@ public class Principal {
         System.out.printf("Saldo da conta 1: R$%.2f%n", conta1.getSaldo());
         System.out.printf("Saldo da conta 2: R$%.2f%n", conta2.getSaldo());
         System.out.printf("Pontos da conta 1: %d%n", pontuacao.getPontos());
-
+        System.out.printf("Pontos da conta 1: %d%n", pontuacao.getPontos());
     }
 }
