@@ -22,7 +22,7 @@ public class ContaPoupanca implements Conta {
 
     @Override
     public void transferir(Conta conta, double valor) {
-        this.saldo -= valor + 40;
+        this.saldo -= valor;
         conta.depositar(valor);
     }
 
