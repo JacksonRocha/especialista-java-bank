@@ -27,6 +27,11 @@ public class ContaCorrente implements Conta {
     }
 
     @Override
+    public void imprimirSaldo() {
+
+    }
+
+    @Override
     public void aplicarEmInvestimento(double valor) {
         this.saldo -= valor;
     }
