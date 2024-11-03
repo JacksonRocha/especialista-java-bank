@@ -38,6 +38,8 @@ public class AuditoriaDecorator extends ContaBaseDecorator {
 
     @Override
     public void imprimirSaldo() {
+        quantidadeDeOperacoes++;
+        getContaOriginal().imprimirSaldo();
 
     }
 }
