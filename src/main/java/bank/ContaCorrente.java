@@ -33,7 +33,7 @@ public class ContaCorrente implements Conta {
 
     @Override
     public void aplicarEmInvestimento(double valor) {
-        this.saldo -= valor;
+        this.saldo -= valor + 40;
     }
 
     public void sacarTarifa(double valorTarifa) {
